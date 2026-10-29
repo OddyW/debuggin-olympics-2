@@ -14,7 +14,8 @@
     <% for(let onezaid of zaids){ %>
         <div class="zaid-container">
             <h2> <%= onezaid.name %> </h2>
-            <a href="/zaids<%=onezaid._id%>">Show <%= onezaid.name %> Details</a>
+            <!-- missing slash in the route -->
+            <a href="/zaids/<%=onezaid._id%>">Show <%= onezaid.name %> Details</a>
             <br>
             <img class="zaid-image-sm" src="<%=onezaid.zaidImage%>" alt="<%=onezaid.name%>">
         </div>
