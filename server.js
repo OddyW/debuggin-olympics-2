@@ -1,4 +1,5 @@
 // imports
+
 const express = require("express") //importing express package
 const app = express() // creates a express application
 const dotenv = require("dotenv").config() //this allows me to use my .env values in this file
@@ -54,7 +55,9 @@ app.get('/zaids', async (req,res)=>{
     res.render('all-zaids.ejs',{zaids: allZaids})
 })
 
-app.get('/zaids/new', (res, req)=>{
+
+//res req are swapped
+app.get('/zaids/new', (req, res)=>{
     res.render('./views/create-zaid.ejs')
 })
 
