@@ -1,4 +1,5 @@
-const mongoose = require('mangoose')
+//it is mongoose not mangoose
+const mongoose = require('mongoose')
 
 
 // Schema
@@ -18,4 +19,5 @@ const zaidSchema = new mongoose.Schema({
 // model
 const Zaid = mongoose.model('Zaid',zaidSchema)
 
-module.export = Zaid
+//missing S in export 
+module.exports = Zaid
